@@ -32,7 +32,7 @@
 
         <!-- Game Board -->
         <div class="d-flex flex-row justify-content-around flex-wrap">
-            <div class="gamePiece m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#questionModal">100</div>
+            <div class="gamePiece m-2 d-flex justify-content-center align-items-center" onClick="showQuestion(1)">100</div>
             <div class="gamePiece m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#questionModal">100</div>
             <div class="gamePiece m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#questionModal">100</div>
             <div class="gamePiece m-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#questionModal">200</div>
@@ -64,7 +64,7 @@
                 <div class="modal-body">
                     <div class="d-flex flex-flow">
                         <div class="d-block">
-                            <img src="images/forest.jpg" class="circleImage rounded" id="questionImage">
+                            <img src="images/forest.jpg" class="circleImage rounded-circle shadow" id="questionImage">
                         </div>
                         <div class="ml-3 mt-2 align-items-center">
                             <p class="smallLabel" id="questionLabel">Small label goes here...</p>
@@ -72,10 +72,10 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column py-3">
-                        <button type="button" class="btn btn-primary btn-lg    mb-2" id="optionA">Option A</button>
-                        <button type="button" class="btn btn-primary btn-lg mb-2" id="optionB">Option B</button>
-                        <button type="button" class="btn btn-primary btn-lg mb-2" id="optionC">Option C</button>
-                        <button type="button" class="btn btn-primary btn-lg" id="optionD">Option D</button>
+                        <button type="button" class="btn btn-primary btn-lg    mb-2" id="optionA" onClick="submitQuestion()">Option A</button>
+                        <button type="button" class="btn btn-primary btn-lg mb-2" id="optionB" onClick="submitQuestion()">Option B</button>
+                        <button type="button" class="btn btn-primary btn-lg mb-2" id="optionC" onClick="submitQuestion()">Option C</button>
+                        <button type="button" class="btn btn-primary btn-lg" id="optionD" onClick="submitQuestion()">Option D</button>
                     </div>
                 </div>
             </div>
